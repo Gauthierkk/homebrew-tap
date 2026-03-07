@@ -5,7 +5,6 @@ class Cmdloop < Formula
   sha256 "ec10cb41ee32e5c452d35f4785eadafc64c8d339d1d01c8e92c79ef5b8ec1d45"
   license "MIT"
 
-  depends_on xcode: ["14.0", :build]
   depends_on :macos
 
   def install
