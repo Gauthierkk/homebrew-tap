@@ -1,8 +1,8 @@
 cask "devtools" do
-  version "0.1.0"
-  sha256 "PLACEHOLDER" # Update after first release
+  version "0.1.1"
+  sha256 "c9ad29b6e2bb94c0104b01aa44535998bfb6eff2945260c165ebac1988898571"
 
-  url "https://github.com/Gauthierkk/devtools/releases/download/v#{version}/DevTools_#{version}_aarch64.dmg"
+  url "https://github.com/Gauthierkk/devtools/releases/download/v#{version}/DevTools_0.1.0_aarch64.dmg"
   name "DevTools"
   desc "Modular macOS-first developer toolkit"
   homepage "https://github.com/Gauthierkk/devtools"
