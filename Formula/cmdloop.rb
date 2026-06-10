@@ -1,8 +1,8 @@
 class Cmdloop < Formula
   desc "Minimal macOS menu bar app for managing cron jobs"
   homepage "https://github.com/Gauthierkk/cmd-loop"
-  url "https://github.com/Gauthierkk/cmd-loop/archive/refs/tags/v1.3.0.tar.gz"
-  sha256 "32dd6db92f4f5ea3470d323a9cd62d969899a5ed098b5381143044f577b7c55c"
+  url "https://github.com/Gauthierkk/cmd-loop/archive/refs/tags/v1.4.0.tar.gz"
+  sha256 "2bf198df4a4e197d7096b58e937b9e9831f2d9abb85699c6bbde04b89f872fdc"
   license "MIT"
 
   depends_on :macos
