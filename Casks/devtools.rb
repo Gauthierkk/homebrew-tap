@@ -7,7 +7,7 @@ cask "devtools" do
   desc "Modular macOS-first developer toolkit"
   homepage "https://github.com/Gauthierkk/devtools"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
   depends_on arch: :arm64
 
   app "DevTools.app"
