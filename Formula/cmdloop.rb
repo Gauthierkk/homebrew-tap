@@ -1,27 +1,26 @@
 class Cmdloop < Formula
   desc "Minimal macOS menu bar app for managing cron jobs"
   homepage "https://github.com/Gauthierkk/cmd-loop"
-  url "https://github.com/Gauthierkk/cmd-loop/archive/refs/tags/v1.5.0.tar.gz"
-  sha256 "54b0afccc5a025fd28496026ef43423936e266c23efa50cca51a50f7f94085c3"
+  url "https://github.com/Gauthierkk/cmd-loop/releases/download/v1.6.0/cmdloop-1.6.0-macos-universal.tar.gz"
+  sha256 "6a8b662d86ef5d67a682675ebe3b063593afd44b754b3d4df3d3515b435f130a"
   license "MIT"
 
   depends_on :macos
 
   def install
-    system "swift", "build", "-c", "release", "--disable-sandbox"
-    bin.install ".build/release/cmdloop"
+    bin.install "cmdloop"
     prefix.install "com.cmdloop.plist"
   end
 
   def caveats
-    <<~EOS
+    <<~CAVEATS
       To start cmdloop automatically on login:
         cp #{opt_prefix}/com.cmdloop.plist ~/Library/LaunchAgents/
         launchctl load ~/Library/LaunchAgents/com.cmdloop.plist
 
       Or just run it manually:
         cmdloop
-    EOS
+    CAVEATS
   end
 
   test do
